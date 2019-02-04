@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.26)  3 FEB 2019 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.26)  3 FEB 2019 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -92,13 +92,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2] [3] [4]
-Overfull \hbox (87.4988pt too wide) in paragraph at lines 116--117
-[]\OT1/cmr/m/n/10 Zhang, M. & Fletcher, P.T. Int J Com-put Vis (2019) 127: 61. 
-https://doi.org/10.1007/s11263-
- []
-
-[5] (./Intro.aux) ) 
+] [2] [3] [4] [5] [6]
+(./Intro.aux) ) 
 Here is how much of TeX's memory you used:
  938 strings out of 492639
  11757 string characters out of 6135497
@@ -107,12 +102,12 @@ Here is how much of TeX's memory you used:
  4850 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  23i,10n,43p,1028b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on Intro.pdf (5 pages, 48304 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on Intro.pdf (6 pages, 49447 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
