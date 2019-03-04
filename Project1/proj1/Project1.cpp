@@ -18,8 +18,7 @@
 #include "svbksb.c"
 #include "svdcmp.c"
 //
-int main( int argc, char** argv )
-{
+int main( int argc, char** argv ){
 	int ExtentionLength  = 4; // .PGM
     char *TempFileName = new char[INT_MAX]; 
 	int lengthOfName = strlen( argv[1] );
@@ -54,8 +53,7 @@ int main( int argc, char** argv )
     KY[4] = 38;
 
 	Matrix_A = new float*[5];
-	for( int i = 0; i < 5; ++i )
-	{
+	for( int i = 0; i < 5; ++i ){
 		Matrix_A[i] = new float[4];
 	}
 
@@ -78,8 +76,7 @@ int main( int argc, char** argv )
 	Matrix_A[4][3] = 1.0f;
 
 	std::cout << "The 'Matrix_A' Matrix" << std::endl;
-	for( int i = 1; i <= 4; ++i )
-	{
+	for( int i = 1; i <= 4; ++i ){
 		std::cout << "| " << Matrix_A[i][1] << ' ' << Matrix_A[i][2] << ' ' << Matrix_A[i][3] << " |" << std::endl;
 	}
 	solve_system( 4, 3, Matrix_A, XCoef, KX );
@@ -87,24 +84,17 @@ int main( int argc, char** argv )
 
 	std::cout << "The 'X' Matrix (Affine Transformation Parameters)" << std::endl;
 	std::cout << "[ X_Vector Y_Vector ]" << std::endl;
-	for( int i = 1; i < 4; ++i )
-	{
+	for( int i = 1; i < 4; ++i ){
 		std::cout << "| " << XCoef[i] << ' ' << YCoef[i] << " |" << std::endl; 
 	}
-	for( int i = 0; i < 112; ++i )
-	{
-		for( int j = 0; j < 92; ++j )
-		{
+	for( int i = 0; i < 112; ++i ){
+		for( int j = 0; j < 92; ++j ){
 			X = ( (j * XCoef[1]) + (i * XCoef[2]) + XCoef[3] );
 			Y = ( (j * YCoef[1]) + (i * YCoef[2]) + YCoef[3] );
-			if( X >= 0 and X < 40 and Y >= 0 and Y < 48 )
-			{
-				if( dest.at( Y, X ) == 0 )
-				{
+			if( X >= 0 and X < 40 and Y >= 0 and Y < 48 ){
+				if( dest.at( Y, X ) == 0 ){
 					dest.at( Y, X ) = source.at( i, j );
-				}
-				else
-				{
+				}else{
 					dest.at( Y, X ) = (source.at( i, j ) + dest.at( Y, X )) / 2;
 				}
 			}
