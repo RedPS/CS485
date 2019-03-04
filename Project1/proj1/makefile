@@ -24,6 +24,6 @@ S2: main
 	./Project1 Images/S2/10.pgm 46 53 77 52 72 68 67 87
 clean:
 	-rm Project1
-	-rm Images/S1/*Result.pgm
-	-rm Images/S2/*Result.pgm
+	-rm Images/S1/*-result.PGM
+	-rm Images/S2/*-result.PGM
 
