@@ -20,13 +20,13 @@
 //
 int main( int argc, char** argv ){
 	int ExtentionLength  = 4; // .PGM
-    char *TempFileName = new char[INT_MAX]; 
+  char *TempFileName = new char[INT_MAX]; 
 	int lengthOfName = strlen( argv[1] );
 	strcpy( TempFileName, argv[1] );
-    strcpy( TempFileName + lengthOfName - ExtentionLength, "-result.PGM" );
+  strcpy( TempFileName + lengthOfName - ExtentionLength, "-result.PGM" );
 
-    int X;
-    int Y;
+  int X;
+  int Y;
 
 	pgm source;
 	pgm dest(48, 40);
@@ -34,23 +34,23 @@ int main( int argc, char** argv ){
 	float** Matrix_A;
 
 	float XCoef[4];
-    float YCoef[4];
+  float YCoef[4];
 
 	float KX[4];
 	float KY[4];
 
     //arbitarry values... can be changed but these are ideal
 	KX[1] = 8;
-    KY[1] = 10;
+  KY[1] = 10;
 
 	KX[2] = 31;
-    KY[2] = 10;
+  KY[2] = 10;
 
 	KX[3] = 20;
-    KY[3] = 27;
+  KY[3] = 27;
 
 	KX[4] = 20;
-    KY[4] = 38;
+  KY[4] = 38;
 
 	Matrix_A = new float*[5];
 	for( int i = 0; i < 5; ++i ){
