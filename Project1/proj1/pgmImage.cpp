@@ -1,3 +1,11 @@
+/**
+ * @File pgmImage.cpp READ/Write PGM FILES
+ * @brief Simple implementation for reading and writing PGM images 
+ * @Version 1.3
+ * @Author modified by Pedram Safae, Mostly was provided in CS474 Image Processing by Dr. Bebis
+ * @Date March 4
+ * @Bug None that can be seen
+ */
 #include "pgmImage.h"
 
 pgm::pgm()
