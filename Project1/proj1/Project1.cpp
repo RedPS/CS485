@@ -1,12 +1,31 @@
+/**
+ * @File Project1.cpp Main Driver
+ * @brief Simple normalization for human faces
+ * @Version 1.3
+ * @Author Pedram Safei
+ * @Date March 4
+ * @Bug None that can be seen
+ */
+
+///Header Files /////////////////////////////
+// These files are required for this program to work correctly
+//
 #include <iostream>
 #include <string.h>
+#include <limits.h>
 #include "pgmImage.cpp"
 #include "solve_system.c"
 #include "svbksb.c"
 #include "svdcmp.c"
-
+//
 int main( int argc, char** argv )
 {
+	int ExtentionLength  = 4; // .PGM
+    char *TempFileName = new char[INT_MAX]; 
+	int lengthOfName = strlen( argv[1] );
+	strcpy( TempFileName, argv[1] );
+    strcpy( TempFileName + lengthOfName - ExtentionLength, "-result.PGM" );
+
     int X;
     int Y;
 
@@ -91,10 +110,6 @@ int main( int argc, char** argv )
 			}
 		}
 	}
-    char TempFileName[128]; 
-	int len = strlen( argv[1] );
-	strcpy( TempFileName, argv[1] );
-    strcpy( TempFileName + len - 4, "_Result.pgm" );
 	dest.write( TempFileName );
 	return 0;
 }
