@@ -1,3 +1,5 @@
+These are the coordinates that were manually extracted from the image 
+
 Image      LeftEye  RightEye TipNose CenterMouth
 
 S1_1        26 51    63 50   45 70   44 88
