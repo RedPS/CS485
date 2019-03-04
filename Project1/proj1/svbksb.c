@@ -1,3 +1,5 @@
+//THIS FILE HAS BEEN MODIFIED TO FIT THE NEED OF THE USER
+
 #include <stdio.h>
 #include <math.h>
 
